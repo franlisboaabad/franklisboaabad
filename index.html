@@ -63,12 +63,13 @@
 
 
 
-    <nav class="light-red lighten-4 " role="navigation">
+    <nav class="light-red lighten-4" role="navigation">
         <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">FRANK LISBOA ABAD</a>
             <ul class="right hide-on-med-and-down">
-                <li class="active"><a href="#">CONOCEME</a></li>
-                <li><a href="#">PORTAFOLIO</a></li>
-                <li><a href="#">CONTACTO</a></li>
+                <li class="active"><a href="#header"  data-ancla="#header">CONOCEME</a></li>
+                <li><a href="#portafolio" data-ancla="#portafolio">PORTAFOLIO</a></li>
+                <li><a href="#contacto" data-ancla="#contacto">CONTACTO</a></li>
+                <li><a href="portafolio/curriculumfranklisboa.pdf" class="waves-effect waves-light btn-small pink" target="_blank">DESCARGAR CURRICULUM VITAE</a></li>
             </ul>
 
             <!-- #region sidenav mobile-->
@@ -190,7 +191,7 @@
     <section id="tecnologias">
         <div class="container">
             <hr>
-            <h5 class="center">TECNOLOGÍAS UTILIZADAS</h5><br>
+            <h5 class="center">TECNOLOGÍAS FRONTEND</h5><br>
             <div class="row">
                 <div class="col s12 m4">
                     <div class="card hoverable">
@@ -270,7 +271,7 @@
         </div>
     </section>
     
-    
+   
 
     <!-- #region btn floating -->
 
@@ -289,7 +290,7 @@
   
 
     <footer class="page-footer">
-        <div class="container">
+        <div class="container" id="contacto">
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">Frank Lisboa Abad</h5>
@@ -317,10 +318,22 @@
     
 
     <!--JavaScript at end of body for optimized loading-->
-    <script src="js/jquery-2.1.1.min.js"></script>
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="js/documento.js"></script>
-    
+    <script>
+        /*MI ANCLA*/
+        $('nav a').click(function(e){
+        e.preventDefault(); //evitar el eventos del enlace normal
+        var strAncla=$(this).attr('href'); //id del ancla
+        $('body,html').stop(true,true).animate({
+        scrollTop: $(strAncla).offset().top
+        },1000);
+
+        });
+
+    </script>
   
 </body>
 
