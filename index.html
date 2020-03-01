@@ -1,31 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Frank Lisboa Abad - Web Designer Piura">
-    <title>Frank Lisboa Abad - Desarrollador Frontend</title>
-
-    <meta property="og:url" content="https://franlisboaabad.github.io/franklisboaabad/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Frank Lisboa Abad | Desarrollo frontend" />
-    <meta property="og:description"
-        content="Mi nombre es Frank Lisboa Abad, apasionado a la tecnologia y al desarrollo Frontend." />
-    <meta property="og:image" content="/images/franklisboaabad.jpg" />
-
-    <meta name="keywords"
-        content="Frank Lisboa Abad, web designer, Tecnologias HTML5 + CSS + JS, Framework JS Vuejs, Desarrollo de software a medida, Proramacion php, Base de datos Myql">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-
 
 
     <style>
@@ -45,9 +30,6 @@
         nav {
             color: #fff;
             background-color: #2859D8;
-            width: 100%;
-            height: 56px;
-            line-height: 56px;
         }
 
         .page-footer {
@@ -55,54 +37,57 @@
             color: #fff;
             background-color: #2859D8;
         }
-
-        #header {
-            margin-top: 1rem;
+        .nav-wrapper{
+            padding-left: 20px;
+            padding-right: 20px;
         }
     </style>
+
 </head>
 
 <body>
 
 
-    <div class="navbar-fixed">
 
-        <nav class="light-red lighten-4" role="navigation">
-            <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Frank Lisboa
-                    Abad</a>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">FRANK LISBOA</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li class="active"><a href="#header" data-ancla="#header">CONOCEME</a></li>
-                    <li><a href="#portafolio" data-ancla="#portafolio">PORTAFOLIO</a></li>
-                    <li><a href="#contacto" data-ancla="#contacto">CONTACTO</a></li>
-                    <li><a href="portafolio/franklisboaabad.pdf" class="waves-effect waves-light btn-small pink"
+                    <li class="active"><a href="#header">CONOCEME</a></li>
+                    <li><a href="#portafolio">PORTAFOLIO</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="portafolio/franklisboaabad.pdf" class="waves-effect waves-light btn-small pink pulse"
                             target="_blank">DESCARGAR HOJA DE VIDA</a></li>
                 </ul>
-
-                <!-- #region sidenav mobile-->
-                <ul id="slide-out" class="sidenav">
-                    <li>
-                        <div class="user-view">
-                            <div class="background">
-                                <img src="images/desarrollo-web.png">
-                            </div>
-                            <a href="#user"><img class="circle" src="images/franklisboaabad.jpg"></a>
-                            <a href="#name"><span class="white-text name">Frank Lisboa Abad</span></a>
-                            <a href="#email"><span class="white-text email">franklisboaabad@gmail.com</span></a>
-                        </div>
-                    </li>
-                    <li><a href="#!"><i class="material-icons">account_box</i>First Link With Icon</a></li>
-                    <li><a href="#!">Second Link</a></li>
-                    <li>
-                        <div class="divider"></div>
-                    </li>
-                    <li><a class="subheader">Subheader</a></li>
-                    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-                </ul>
-                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             </div>
-
-
         </nav>
+
+        <!-- #region sidenav mobile-->
+        <ul id="mobile-demo" class="sidenav">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="images/desarrollo-web.png">
+                    </div>
+                    <a href="#user"><img class="circle" src="images/franklisboaabad.jpg"></a>
+                    <a href="#name"><span class="white-text name">Frank Lisboa Abad</span></a>
+                    <a href="#email"><span class="white-text email">franklisboaabad@gmail.com</span></a>
+                </div>
+            </li>
+            <li><a href="#!"><i class="material-icons">account_box</i>Bachiller en Informática</a></li>
+            <li><a href="#!">Web Designer</a></li>
+            <li>
+            
+            <!-- <li><a href="#!"><i class="material-icons">account_box</i>First Link With Icon</a></li>
+            <li><a href="#!">Second Link</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="subheader">Subheader</a></li>
+            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li> -->
+        </ul>
 
 
     </div>
@@ -126,10 +111,10 @@
                 <div class="col s12 m4">
                     <div class="card">
                         <div class="card-image">
-                            <img src="images/franklisboaabad.jpg">
+                            <img src="images/franklisboaabad.jpg" class="responsive-img">
                         </div>
                         <div class="card-content">
-                            <p style="text-align: justify">Soy un joven, Honrado, Responsable, trabajo en equipo,
+                            <p class="center-align">Soy un joven, Honrado, Responsable, trabajo en equipo,
                                 proactivo en las tareas encomendadas, con deseos de superación y adquirir nuevos
                                 conocimientos, Respondiendo siempre al cumplimiento de los objetivos de la entidad.</p>
                         </div>
@@ -377,6 +362,8 @@
         </div>
     </section>
 
+    
+
     <footer class="page-footer">
         <div class="container" id="contacto">
             <div class="row">
@@ -409,40 +396,18 @@
 
 
 
-    <!--JavaScript at end of body for optimized loading-->
+
+ 
+
+
+    
+
 
     <script src="js/jquery-2.1.1.min.js"></script>
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
     <script src="js/documento.js"></script>
-
-    <script>
-        /*MI ANCLA
-        $('nav a').click(function(e){
-        e.preventDefault(); //evitar el eventos del enlace normal
-        var strAncla=$(this).attr('href'); //id del ancla
-        $('body,html').stop(true,true).animate({
-        scrollTop: $(strAncla).offset().top
-        },1000);
- 
-        });*/
-
-        $(document).ready(function () {
-            $('a[href^="#"]').click(function () {
-                var destino = $(this.hash);
-                if (destino.length == 0) {
-                    destino = $('a[name="' + this.hash.substr(1) + '"]');
-                }
-                if (destino.length == 0) {
-                    destino = $('html');
-                }
-                $('html, body').animate({ scrollTop: destino.offset().top }, 800);
-                return false;
-            });
-        });
-
-    </script>
 
 </body>
 

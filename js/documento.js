@@ -14,39 +14,40 @@ $(document).ready(function () {
     $('.sidenav').sidenav();
 });
 
+
+
 $(document).ready(function () {
     $('.fixed-action-btn').floatingActionButton();
 });
 
 var instance = M.Carousel.init({
-fullWidth: true
+    fullWidth: true
 });
 
 // Or with jQuery
 
 $('.carousel.carousel-slider').carousel({
-fullWidth: true
+    fullWidth: true
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.materialboxed').materialbox();
 });
 
 /*paralax*/
-$(document).ready(function(){
-        $('.parallax').parallax();
+$(document).ready(function () {
+    $('.parallax').parallax();
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.slider').slider();
 });
 
 
 // Or with jQuery
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.carousel').carousel();
-  });
+});
 
-  /*mimodal*/
-  
+/*mimodal*/
