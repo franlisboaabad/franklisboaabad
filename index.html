@@ -37,7 +37,8 @@
             color: #fff;
             background-color: #2859D8;
         }
-        .nav-wrapper{
+
+        .nav-wrapper {
             padding-left: 20px;
             padding-right: 20px;
         }
@@ -52,12 +53,12 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">FRANK LISBOA</a>
+                <a href="/index.html" class="brand-logo">FRANK LISBOA</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li class="active"><a href="#header">CONOCEME</a></li>
-                    <li><a href="#portafolio">PORTAFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li class="active"><a href="#header" data-ancla="header">CONOCEME</a></li>
+                    <li><a href="#portafolio" data-ancla="portafolio">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" data-ancla="contacto">CONTACTO</a></li>
                     <li><a href="portafolio/franklisboaabad.pdf" class="waves-effect waves-light btn-small pink pulse"
                             target="_blank">DESCARGAR HOJA DE VIDA</a></li>
                 </ul>
@@ -79,8 +80,8 @@
             <li><a href="#!"><i class="material-icons">account_box</i>Bachiller en Informática</a></li>
             <li><a href="#!">Web Designer</a></li>
             <li>
-            
-            <!-- <li><a href="#!"><i class="material-icons">account_box</i>First Link With Icon</a></li>
+
+                <!-- <li><a href="#!"><i class="material-icons">account_box</i>First Link With Icon</a></li>
             <li><a href="#!">Second Link</a></li>
             <li>
                 <div class="divider"></div>
@@ -345,7 +346,8 @@
 
                 <div class="col s12 m4">
                     <img class="materialboxed responsive-img" src="images/portafolio/munibernal.png">
-                    <p class="center"> <a href="http://munibernal.gob.pe/" target="_blank"> MUNICIPALIDAD BERNAL </a> </p>
+                    <p class="center"> <a href="http://munibernal.gob.pe/" target="_blank"> MUNICIPALIDAD BERNAL </a>
+                    </p>
                 </div>
 
                 <div class="col s12 m4">
@@ -362,7 +364,7 @@
         </div>
     </section>
 
-    
+
 
     <footer class="page-footer">
         <div class="container" id="contacto">
@@ -397,10 +399,10 @@
 
 
 
- 
 
 
-    
+
+
 
 
     <script src="js/jquery-2.1.1.min.js"></script>
@@ -408,6 +410,18 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
     <script src="js/documento.js"></script>
+
+
+    <script>
+        $('nav a').click(function (e) {
+            e.preventDefault();		//evitar el eventos del enlace normal
+            var strAncla = $(this).attr('href'); //id del ancla
+            $('body,html').stop(true, true).animate({
+                scrollTop: $(strAncla).offset().top
+            }, 1000);
+
+        });
+    </script>
 
 </body>
 
