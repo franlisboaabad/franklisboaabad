@@ -12,6 +12,19 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
+    <!-- Scroll -->
+    <script src="js/smooth-scroll.min.js"></script>
+    <script>
+      smoothScroll.init({
+      selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+      selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+      speed: 2000, // Integer. How fast to complete the scroll in milliseconds
+      easing: 'easeInOutCubic', // Easing pattern to use
+      offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+      callback: function ( anchor, toggle ) {} // Function to run after scrolling
+      });
+    </script>
+
 
     <style>
         body {
@@ -56,9 +69,9 @@
                 <a href="/index.html" class="brand-logo">FRANK LISBOA</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li class="active"><a href="#header" data-ancla="header">CONOCEME</a></li>
-                    <li><a href="#portafolio" data-ancla="portafolio">PORTAFOLIO</a></li>
-                    <li><a href="#contacto" data-ancla="contacto">CONTACTO</a></li>
+                    <li class="active"><a  data-scroll="" class="nav-link" href="#header" >CONOCEME</a></li>
+                    <li><a data-scroll="" class="nav-link" href="#portafolio" >PORTAFOLIO</a></li>
+                    <li><a  data-scroll="" class="nav-link" href="#contacto" >CONTACTO</a></li>
                     <li><a href="portafolio/franklisboaabad.pdf" class="waves-effect waves-light btn-small pink pulse"
                             target="_blank">DESCARGAR HOJA DE VIDA</a></li>
                 </ul>
@@ -411,7 +424,7 @@
 
     <script src="js/documento.js"></script>
 
-
+<!-- 
     <script>
         $('nav a').click(function (e) {
             e.preventDefault();		//evitar el eventos del enlace normal
@@ -421,7 +434,7 @@
             }, 1000);
 
         });
-    </script>
+    </script> -->
 
 </body>
 
