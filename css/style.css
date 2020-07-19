@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    margin-top: 50px;
+    height: 300px;
+    width: 100%;
+    background-image: url('../img/programacion.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.conoceme {
+    margin-top: -300px;
+}
+
+.conoceme .sobremi {
+    margin-top: 300px;
+    width: 100%;
+}
+
+.skills .progress {
+    margin-top: 20px;
+}
+
+#sticky-footer {
+    flex-shrink: none;
+    color: white;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .conoceme .sobremi {
+        margin-top: 50px;
+    }
+    .conoceme .sobremi {
+        text-align: center;
+    }
+}

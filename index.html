@@ -1,441 +1,339 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frank Lisboa Abad / Web Designer</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Frank Lisboa Abad - Desarrollador Frontend - Web Desinger</title>
 
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-    <!-- Scroll -->
-    <script src="js/smooth-scroll.min.js"></script>
-    <script>
-      smoothScroll.init({
-      selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
-      selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
-      speed: 2000, // Integer. How fast to complete the scroll in milliseconds
-      easing: 'easeInOutCubic', // Easing pattern to use
-      offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
-      callback: function ( anchor, toggle ) {} // Function to run after scrolling
-      });
-    </script>
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-
-    <style>
-        body {
-            font-family: 'Poppins';
-        }
-
-        @media only screen and (max-width : 992px) {
-
-            header,
-            main,
-            footer {
-                padding-left: 0;
-            }
-        }
-
-        nav {
-            color: #fff;
-            background-color: #2859D8;
-        }
-
-        .page-footer {
-            padding-top: 20px;
-            color: #fff;
-            background-color: #2859D8;
-        }
-
-        .nav-wrapper {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-    </style>
-
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FRANK LISBOA ABAD</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" data-scroll href="#conoceme">Conóceme <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" data-scroll href="#servicios">Servicios</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" data-scroll href="#portafolio">Portafolio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <!-- Mi banner principal -->
+        <div class="banner"></div>
+
+        <div class="container mt-5">
+
+            <section class="conoceme" id="conoceme">
+                <div class="row">
+
+                    <div class="col-md-4 pb-3">
+                        <div class="imagen">
+                            <img src="img/perfil.jpg" alt="Frank Lisboa Abad" class="img-fluid" />
+                        </div>
+
+                        <div class="mt-2">
+                            <p class="lead"><strong>Frank Lisboa Abad</strong></p>
+                            <p class="text-justify">
+                                Maquetador Web, Frontend, UI / UX, Analista de sistemas, Egresado de la Universidad Nacional de Piura, Ingeniería Informática 👨‍💻.
+                            </p>
+                        </div>
 
 
+                        <div class="redes-sociales">
 
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper">
-                <a href="/index.html" class="brand-logo">FRANK LISBOA</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li class="active"><a  data-scroll="" class="nav-link" href="#header" >CONOCEME</a></li>
-                    <li><a data-scroll="" class="nav-link" href="#portafolio" >PORTAFOLIO</a></li>
-                    <li><a  data-scroll="" class="nav-link" href="#contacto" >CONTACTO</a></li>
-                    <li><a href="portafolio/franklisboaabad.pdf" class="waves-effect waves-light btn-small pink pulse"
-                            target="_blank">DESCARGAR HOJA DE VIDA</a></li>
-                </ul>
-            </div>
-        </nav>
+                            <div class="bd-example">
 
-        <!-- #region sidenav mobile-->
-        <ul id="mobile-demo" class="sidenav">
-            <li>
-                <div class="user-view">
-                    <div class="background">
-                        <img src="images/desarrollo-web.png">
+                                <p>Redes sociales: </p>
+                                <a href="#!" class="btn btn-primary"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/in/frank-lisboa-abad-81471b107/" target="_Blank" class="btn btn-info"> <i class="fa fa-linkedin"></i></a>
+                                <a href="https://github.com/franlisboaabad" target="_Blank" class="btn btn-dark"><i class="fa fa-github"></i></a>
+                                <a href="https://www.youtube.com/channel/UCCcflqf9Vu7zLGtjo85diyQ?view_as=subscriber" target="_Blank" class="btn btn-danger"><i class="fa fa-youtube"></i></a>
+                                <a href="#!" class="btn btn-info"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+
                     </div>
-                    <a href="#user"><img class="circle" src="images/franklisboaabad.jpg"></a>
-                    <a href="#name"><span class="white-text name">Frank Lisboa Abad</span></a>
-                    <a href="#email"><span class="white-text email">franklisboaabad@gmail.com</span></a>
-                </div>
-            </li>
-            <li><a href="#!"><i class="material-icons">account_box</i>Bachiller en Informática</a></li>
-            <li><a href="#!">Web Designer</a></li>
-            <li>
 
-                <!-- <li><a href="#!"><i class="material-icons">account_box</i>First Link With Icon</a></li>
-            <li><a href="#!">Second Link</a></li>
-            <li>
-                <div class="divider"></div>
-            </li>
-            <li><a class="subheader">Subheader</a></li>
-            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li> -->
-        </ul>
+                    <div class="col-md-8">
+                        <div class="sobremi">
+                            <h1>Hola !</h1>
+                            <p class="text-justify">
+                                Soy un desarrollador web junior capaz de construir una presencia web desde cero: desde el concepto, la navegación, el diseño y la programación hasta UX y SEO. Habilidad para escribir código bien diseñado, comprobable y eficiente utilizando las mejores
+                                prácticas actuales en desarrollo web. Aprendiz rápido, trabajador y jugador de equipo que es competente en una variedad de lenguajes de programación y herramientas web multimedia.
+                            </p>
+                            <a href="documents/franklisboaabad.pdf" class="btn btn-danger" target="_Blank"> <i class="fa fa-download"> </i> DESCARGA MI CV </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="skills pb-5">
+                <h2>Mis skills</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85 %</div>
+                                </div>
+                                <p>HTML 5</p>
+                            </div>
+                            <div class="col-md-12">
+
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85 %</div>
+                                </div>
+                                <p>CSS 3</p>
+                            </div>
+                            <div class="col-md-12">
+
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75 %</div>
+                                </div>
+                                <p>JavaScript</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85 %</div>
+                                </div>
+                                <p>Bootstrap 4</p>
+                            </div>
+                            <div class="col-md-12">
+
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50 %</div>
+                                </div>
+                                <p>VUE JS</p>
+                            </div>
+                            <div class="col-md-12">
+
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50 %</div>
+                                </div>
+                                <p>Laravel</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section class="servicios" id="servicios">
+                <h2>Tecnologías Frecuentadas</h2>
+
+                <div class="row mt-4 pb-2">
+                    <div class="col-md-4 pb-3">
+                        <div class="card">
+                            <img src="img/html5.jpg" class="card-img-top" alt="desarrollo-web">
+                            <div class="card-body">
+                                <h5 class="card-title">HTML 5 + CSS 3</h5>
+                                <p class="card-text text-justify">El HTML en su versión 5 nos permite maquetar sitios web a través de etiquetas y dichas etiquetas las podemos convertir en objetos visuales gracias al CSS en su versión 3.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-3">
+                        <div class="card">
+                            <img src="img/javascript.jpg" class="card-img-top" alt="Diseño-Web">
+                            <div class="card-body">
+                                <h5 class="card-title">JAVASCRIPT</h5>
+                                <p class="card-text text-justify">JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, ​ basado en prototipos, imperativo, débilmente tipado y dinámico.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-3">
+                        <div class="card">
+                            <img src="img/materialize.jpg" class="card-img-top" alt="Social-media">
+                            <div class="card-body">
+                                <h5 class="card-title">MATERIALIZE</h5>
+                                <p class="card-text text-justify">Ofrece una base de CSS sobre la cual implementar cualquier proyecto, ya sea un sitio web o aplicación basada en estándares web. Agiliza los procesos de diseño web.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section class="servicios mt-3">
+                <h2>Mis servicios cómo Freelancer</h2>
+
+                <div class="row mt-3 pb-2">
+                    <div class="col-md-4 pb-3">
+                        <div class="card">
+                            <img src="img/desarrollo-web.png" class="card-img-top" alt="desarrollo-web">
+                            <div class="card-body">
+                                <h5 class="card-title">Desarollo de software</h5>
+                                <p class="card-text text-justify">Diseño Web Diseño y Desarrollo de paginas web. La calidad de su sitio web tiene que reflejar la calidad de sus productos y servicios.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-3">
+                        <div class="card">
+                            <img src="img/diseno-web.png" class="card-img-top" alt="Diseño-Web">
+                            <div class="card-body">
+                                <h5 class="card-title">Diseño de páginas web</h5>
+                                <p class="card-text text-justify">Desarrollo de Software Implementación de sistemas web y escritorio a medida del usuario, llevando a cabo un buen desarrollo de sorftware</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-3">
+                        <div class="card">
+                            <img src="img/social-media.png" class="card-img-top" alt="Social-media">
+                            <div class="card-body">
+                                <h5 class="card-title">Social Media</h5>
+                                <p class="card-text text-justify">Social Media Desarrollo estratégias en Marketing Digital, Social Marketing, Diseño Web, Posicionamiento en Buscadores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="proyectos" id="portafolio">
+                <h2>Mis proyectos Realizados</h2>
+                <div class="row mt-4 pb-3">
+
+
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/portafolio/construye.png">
+                        <p class="center"> <a href="http://atlasproyectos.com/" target="_blank"> ATLAS INGENIERÍA Y
+                                    CONTRUCCIÓN </a> </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/portafolio/seven.png">
+                        <p class="center"> <a href="http://sevenstarperu.com/" target="_blank"> SEVEN STAR PERÚ </a> </p>
+                    </div>
+
+
+
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/portafolio/alemi.png">
+                        <p class="center"> <a href="http://alemidelnorte.com/" target="_blank"> ALEMI DEL NORTE </a> </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/portafolio/ecoturismo.png">
+                        <p class="center"> <a href="#!"> ECOTURISMO PIURA </a> </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/portafolio/barberia.png">
+                        <p class="center"> <a href="http://barbershopthenewstyle.com/" target="_blank"> BARBERSHOP - EL
+                                    NUEVO ESTILO </a> </p>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/portafolio/ideaspiura.png">
+                        <p class="center"> <a href="http://ideaspiuratours.com/" target="_blank">IDEAS PIURA TOURS </a> </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/portafolio/mancora.png">
+                        <p class="center"> <a href="http://mancoratours.com/" target="_blank"> MANCORA TOURS </a> </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/portafolio/proyectosayc.png">
+                        <p class="center"> <a href="http://proyectosayc.com/" target="_blank"> PROYECTOS AYC </a> </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/portafolio/nefasasac.png">
+                        <p class="center"> <a href="http://nefasasac.com/" target="_blank"> NEFASA SAC </a> </p>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/portafolio/munibernal.png">
+                        <p class="center"> <a href="http://munibernal.gob.pe/" target="_blank"> MUNICIPALIDAD BERNAL </a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/portafolio/munivice.png">
+                        <p class="center"> <a href="http://munivice.gob.pe/" target="_blank"> MUNICIPALIDAD VICE </a> </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/portafolio/capofruits.png">
+                        <p class="center"> <a href="http://capofruits.com/" target="_blank"> CAPO FRUITS SRL </a> </p>
+                    </div>
+
+
+                </div>
+            </section>
+        </div>
+
+        <footer id="sticky-footer" class="py-4 bg-dark text-white-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>FRANK LISBOA ABAD</h3>
+                        <p class="text-justify">Hola soy frank Soy un desarrollador web que vive en Piura, Perú. Soy un fanático de la tecnología, el diseño y la innovación. También estoy interesado en la programación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container text-center">
+                <small>Copyright &copy; Todos los derechos reservados 2020</small>
+            </div>
+        </footer>
+
+        <div style="position:fixed;z-index:900;bottom:90px;right:14px">
+            <div style="width:70px;height:70px;float:left;overflow:hidden">
+                <a href="https://api.whatsapp.com/send?phone=51922852443&text= IDEASOFT PERÚ, Link WahtsApp - web " target="_blank"><img src="img/wpp.png" class="img-fluid"></a>
+            </div>
+        </div>
 
 
     </div>
 
-
-    <section>
-        <div class="parallax-container">
-            <div class="parallax"><img src="images/programacion.jpg"></div>
-        </div>
-    </section>
-
-    <section id="header">
-        <div class="container">
-
-            <h3 class="center">CONÓCEME</h3>
-            <hr>
-
-
-            <div class="row">
-
-                <div class="col s12 m4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/franklisboaabad.jpg" class="responsive-img">
-                        </div>
-                        <div class="card-content">
-                            <p class="center-align">Soy un joven, Honrado, Responsable, trabajo en equipo,
-                                proactivo en las tareas encomendadas, con deseos de superación y adquirir nuevos
-                                conocimientos, Respondiendo siempre al cumplimiento de los objetivos de la entidad.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m8" style="padding-top: 50px;">
-                    <div class="col s12 m6">
-                        <div class="icon-block">
-                            <h2 class="center blue-text"><i class="material-icons large">thumb_up</i></h2>
-                            <h5 class="center">MISIÓN</h5>
-                            <blockquote>
-                                <p style="text-align: justify">Continuar capacitandome día a día enfocando en el
-                                    mejoramiento continuo y en mi desarrollo como profesional y como ser humano,
-                                    cumpliendo a cabalidad con mis deberes y obligaciones en mi centro de estudios
-                                    (Universidad nacional de Piura - Perú), a si como tambien en mi trabajo como
-                                    freelancer conservando mi ética, la moral, las buenas costumbres inculcadas en
-                                    mi hogar.</p>
-                            </blockquote>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m6">
-                        <div class="icon-block">
-                            <h2 class="center blue-text"><i class="material-icons large">thumbs_up_down</i>
-                            </h2>
-                            <h5 class="center">VISIÓN</h5>
-                            <blockquote>
-                                <p style="text-align: justify">Graduarme como Bachiller en Ingeniería Informática.
-                                    Aplicar los conocimientos adquiridos en la universidad como en el trabajo
-                                    contribuyendo al avance de la empresa que laboro. A sí mismo tambien contribuir
-                                    a la sociedad con proyectos tecnologicos para satisfacer las necesidades en las
-                                    Mype, desarrollando aplicaciones que aceleren los procesos diarios.</p>
-                            </blockquote>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-    </section>
-
-
-
-    <section id="servicios">
-        <div class="container">
-            <hr>
-            <h3 class="center">Desarrollo Freelance</h3><br>
-            <div class="row">
-                <div class="col s12 m4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/comunicacion.png">
-
-                        </div>
-                        <div class="card-content">
-                            <strong>
-                                <p class="center">Diseño Web</p>
-                            </strong>
-                            <p class="center">Diseño y Desarrollo de paginas web. La calidad de su sitio web tiene que
-                                reflejar la calidad de sus productos y servicios.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/desarrollo-web.png">
-
-                        </div>
-                        <div class="card-content">
-                            <strong>
-                                <p class="center">Desarrollo de Software</p>
-                            </strong>
-                            <p class="center">Implementacion de sistemas web y escritorio a medida del usuario, llevando
-                                a cabo un buen desarrollo de sorftware</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col s12 m4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/mark.png">
-
-                        </div>
-                        <div class="card-content">
-                            <strong>
-                                <p class="center">Social Media</p>
-                            </strong>
-                            <p class="center">Desarrollo estratégias en Marketing Digital, Social Marketing, Diseño Web,
-                                Posicionamiento en Buscadores.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="parallax-container">
-            <div class="parallax"><img src="images/coffe.jpg"></div>
-        </div>
-    </section>
-
-
-    <section id="tecnologias">
-        <div class="container">
-            <hr>
-            <h3 class="center">Tecnologías Utilizadas </h3><br>
-            <div class="row">
-                <div class="col s12 m4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/html5.jpg">
-
-                        </div>
-                        <div class="card-content">
-                            <strong>
-                                <p class="center">HTML5 + CSS3</p>
-                            </strong>
-                            <p class="center">El HTML en su versión 5 nos permite maquetar sitios web a través de
-                                etiquetas y dichas etiquetas las podemos convertir en objetos visuales gracias al CSS en
-                                su versión 3.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/javascript.jpg">
-
-                        </div>
-                        <div class="card-content">
-                            <strong>
-                                <p class="center">JAVASCRIPT</p>
-                            </strong>
-                            <p class="center">JavaScript es un lenguaje de programación interpretado, dialecto del
-                                estándar ECMAScript. Se define como orientado a objetos, ​ basado en prototipos,
-                                imperativo, débilmente tipado y dinámico.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col s12 m4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/materialize.jpg">
-
-                        </div>
-                        <div class="card-content">
-                            <strong>
-                                <p class="center">MATERIALIZE</p>
-                            </strong>
-                            <p class="center">Ofrece una base de CSS sobre la cual implementar cualquier proyecto, ya
-                                sea un sitio web o aplicación basada en estándares web. Agiliza los procesos de diseño
-                                web.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section id="portafolio">
-        <div class="container">
-            <hr>
-            <h3 class="center">Proyectos Realizados</h3><br>
-
-            <div class="row">
-
-                <div class="col s12 m4">
-                    <img class="materialboxed responsive-img" src="images/portafolio/construye.png">
-                    <p class="center"> <a href="http://atlasproyectos.com/" target="_blank"> ATLAS INGENIERÍA Y
-                            CONTRUCCIÓN </a> </p>
-                </div>
-
-                <div class="col s12 m4">
-                    <img class="materialboxed responsive-img" src="images/portafolio/seven.png">
-                    <p class="center"> <a href="http://sevenstarperu.com/" target="_blank"> SEVEN STAR PERÚ </a> </p>
-                </div>
-
-
-
-                <div class="col s12 m4">
-                    <img class="materialboxed responsive-img" src="images/portafolio/alemi.png">
-                    <p class="center"> <a href="http://alemidelnorte.com/" target="_blank"> ALEMI DEL NORTE </a> </p>
-                </div>
-
-                <div class="col s12 m4">
-                    <img class="materialboxed responsive-img" src="images/portafolio/ecoturismo.png">
-                    <p class="center"> <a href="#!"> ECOTURISMO PIURA </a> </p>
-                </div>
-
-                <div class="col s12 m4">
-                    <img class="materialboxed responsive-img" src="images/portafolio/barberia.png">
-                    <p class="center"> <a href="http://barbershopthenewstyle.com/" target="_blank"> BARBERSHOP - EL
-                            NUEVO ESTILO </a> </p>
-                </div>
-
-
-                <div class="col s12 m4">
-                    <img class="materialboxed responsive-img" src="images/portafolio/ideaspiura.png">
-                    <p class="center"> <a href="http://ideaspiuratours.com/" target="_blank">IDEAS PIURA TOURS </a> </p>
-                </div>
-
-                <div class="col s12 m4">
-                    <img class="materialboxed responsive-img" src="images/portafolio/mancora.png">
-                    <p class="center"> <a href="http://mancoratours.com/" target="_blank"> MANCORA TOURS </a> </p>
-                </div>
-
-                <div class="col s12 m4">
-                    <img class="materialboxed responsive-img" src="images/portafolio/proyectosayc.png">
-                    <p class="center"> <a href="http://proyectosayc.com/" target="_blank"> PROYECTOS AYC </a> </p>
-                </div>
-
-                <div class="col s12 m4">
-                    <img class="materialboxed responsive-img" src="images/portafolio/nefasasac.png">
-                    <p class="center"> <a href="http://nefasasac.com/" target="_blank"> NEFASA SAC </a> </p>
-                </div>
-
-
-                <div class="col s12 m4">
-                    <img class="materialboxed responsive-img" src="images/portafolio/munibernal.png">
-                    <p class="center"> <a href="http://munibernal.gob.pe/" target="_blank"> MUNICIPALIDAD BERNAL </a>
-                    </p>
-                </div>
-
-                <div class="col s12 m4">
-                    <img class="materialboxed responsive-img" src="images/portafolio/munivice.png">
-                    <p class="center"> <a href="http://munivice.gob.pe/" target="_blank"> MUNICIPALIDAD VICE </a> </p>
-                </div>
-
-                <div class="col s12 m4">
-                    <img class="materialboxed responsive-img" src="images/portafolio/capofruits.png">
-                    <p class="center"> <a href="http://capofruits.com/" target="_blank"> CAPO FRUITS SRL </a> </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-    <footer class="page-footer">
-        <div class="container" id="contacto">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Frank Lisboa Abad</h5>
-                    <p class="white-text text-lighten-4">Hola soy frank Soy un desarrollador web que vive en Piura,
-                        Perú. Soy un fanático de la tecnología, el diseño y la innovación. También estoy interesado en
-                        la programación.</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Redes sociales</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!" target="_blank">Facebook</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Twiter</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
-                        <li><a class="grey-text text-lighten-3"
-                                href="https://www.youtube.com/channel/UCCcflqf9Vu7zLGtjo85diyQ?view_as=subscriber"
-                                target="_blank">Youtube</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2014 - 2020 Copyright Text
-                <a href="#!" style="color: white;">Web Designer</a>
-            </div>
-        </div>
-    </footer>
-
-
-
-
-
-
-
-
-
-
-    <script src="js/jquery-2.1.1.min.js"></script>
-
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-
-    <script src="js/documento.js"></script>
-
-<!-- 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
-        $('nav a').click(function (e) {
-            e.preventDefault();		//evitar el eventos del enlace normal
-            var strAncla = $(this).attr('href'); //id del ancla
-            $('body,html').stop(true, true).animate({
-                scrollTop: $(strAncla).offset().top
-            }, 1000);
-
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 500
         });
-    </script> -->
-
+    </script>
 </body>
 
 </html>
