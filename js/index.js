@@ -92,7 +92,7 @@ function Proyects() {
 
 
             <div class="card-body">
-                <p class="card-title">PROYETOS AYC</p>
+                <p class="card-title">PROYECTOS AYC</p>
             </div>
         </div>
     </div>
